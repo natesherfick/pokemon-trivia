@@ -1,4 +1,4 @@
-import ValuesService from "../Services/ValuesService.js";
+import PokemonService from "../Services/PokemonService.js";
 import store from "../store.js";
 
 //Private
@@ -8,7 +8,7 @@ function _draw() {
 }
 
 //Public
-export default class ValuesController {
+export default class PokemonController {
   constructor() {
     store.subscribe("values", _draw);
   }
